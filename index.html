@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script>
+        var string = "";
+    </script>
+    <div class="container">
+        <div class="content">
+                <div class="buttons" id="redDiv"></div>
+                <div class="buttons" id="yellowDiv"></div>
+                <div class="buttons" id="greenDiv"></div>
+            <div class="display">
+            <p id="displayPTag">welcome to calculator</p></div>
+            <div class="keys">
+                <div class="numbers">
+                    <div id="nine" class="digits" onclick="add('9')">9</div>
+                    <div id="eight" class="digits" onclick="add('8')">8</div>
+                    <div id="seven" class="digits" onclick="add('7')">7</div>
+                    <div id="siz" class="digits" onclick="add('6')">6</div>
+                    <div id="five" class="digits" onclick="add('5')">5</div>
+                    <div id="four" class="digits" onclick="add('4')">4</div>
+                    <div id="three" class="digits" onclick="add('3')">3</div>
+                    <div id="two" class="digits" onclick="add('2')">2</div>
+                    <div id="one" class="digits" onclick="add('1')">1</div>
+                    <div id="zero" class="digits" onclick="add('0')">0</div>
+                    <div id="dot" class="digits" onclick="add('.')">.</div>
+                    <div id="clear" class="digits" onclick="clearIt()">CLS</div>
+
+                </div>
+                <div class="operators">
+                    <div class="operatorKeys" onclick="add(' x ')">x</div>
+                    <div class="operatorKeys" onclick="add(' / ')">/</div>
+                    <div class="operatorKeys" onclick="add(' - ')">-</div>
+                    <div class="operatorKeys" onclick="add(' + ')">+</div>
+                    <div id="equal" class="operatorKeys"  onclick="evaluatee()">=</div>
+
+                </div>
+                
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
